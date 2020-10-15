@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inshorts Clone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    .header{
+      display: flex;
+    }
+    #discover{
+      background-color: white;
+      border: none;
+      padding: 5px 15px;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+    #feed{
+      padding-top: 4px;
+      font-size: 18px;
+    }
+
+    H5{ 
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 4px solid skyblue;
+      transform: translateX(-50%);
+      padding: 7px 0px;
+      font-size: auto;
+
+    }
+    #name{
+      color: lightgray;
+    }
+    .swiper-container{
+      height: 86vh;
+      overflow: scroll;
+      width: 100vw;
+    }
+
+    .card-image{
+      height: 35vh;
+      overflow: hidden;
+    }
+    #foot-buttons{
+      background-color: white;
+      border: none;
+     
+      padding: 10px 15px;
+      border-left: 0.5px solid lightgray;
+    }
+    #reload {
+      background-color: white;
+        border: none;
+        color: black;
+        padding: 12px;
+        font-size: 14px;
+        cursor: pointer;
+      float: right;
+    }
+
+    .footer-container {
+      position: fixed;
+      width: 100vw;
+      height: 8vh;
+      top: 100vh;
+      transform: translateY(-180%);
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 8vh;
+      border-top: 1px;
+      /*top: 100vh;
+      transform: translateY(-100%);*/
+    }
+    
+    .footer > button {
+      background-color: white;
+      border: none;
+      border-top: 1px solid lightgrey;
+        width: 100vw;
+      text-align: center;
+      font-size: 11px;
+        color: grey;
+    }
+
+    
+    
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="header">
+        <button id="discover"><i class="fas fa-chevron-left" style="color: skyblue; padding-right: 5px"></i>Discover</button>
+        <h5 id="feed">My Feed</h5>
+        <!-- <button id="discover"> Refresh </button> -->
+        <button id="reload"><i class="fas fa-redo" style="color: skyblue; background: white; border: none;"></i></button>
+      </div>
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card" style="height:100vh">
+                <div class="card-image">
+                  <img class="card-img-top" src="https://i1.wp.com/whatsnew2day.com/wp-content/uploads/2020/10/Incredible-moment-when-daredevil-pilot-flies-Russias-new-1300-mph.jpg?fit=634%2C353&ssl=1" alt="Card image" style="width:100%">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Watch Russia Fly Its New Fighter Jet with the Top Down, As a Flex</h4>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum numquam assumenda natus vero esse dolores vel ab laborum hic soluta non et eum impedit quas eaque autem reprehenderit, ratione voluptatibus? adipisicinostrum porro deserunt dolor.</p>
+                  <p id="name"><small>Kyle Mizokami</small></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="card" style="height:100vh">
+                <div class="card-image">
+                  <img class="card-img-top" src="https://defenceforumindia.com/attachments/main-qimg-dd9216dfa8793b88fbc73004462445a7-c-jpg.33070/" alt="Card image" style="width:100%">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">IAF plans to have 125 advanced combat jets</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum vero excepturi dolore impedit sed, et facere harum id ipsum deleniti eos placeat voluptatem quisquam dicta provident optio perferendis soluta!</p>
+                  <p id="name"><small>Shashank Sharma</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card" style="height:100vh">
+                <div class="card-image">
+                  <img class="card-img-top" src="https://cdn.defenseone.com/media/img/upload/2020/09/29/5099411/860x394.jpg" alt="Card image" style="width:100%">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">The Real F-35 Problem We Need to Solve</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus blanditiis cupiditate qui, exercitationem labore nihil illo a, ad consequatur, error neque quis? Assumenda praesentium velit pariatur eligendi inventore ipsa repudiandae.</p>
+                  <p id="name"><small>Scott Copper</small></p>
+                </div>
+              </div>
+            </div>   
+      </div>
+      <div class="footer-container">
+        <div class="footer">
+         <button id="relevance"><i class="fas fa-circle" style="display: inherit; padding-bottom: 5px; font-size: 18px; color: lightgreen"></i>Relevance</button>
+         <button id="share"><i class="fas fa-share-alt" style="display: inherit; padding-bottom: 5px; font-size: 18px; color: skyblue"></i>Share</button>
+         <button id="bookmark"><i class="far fa-bookmark" style="display: inherit; padding-bottom: 5px; font-size: 18px; color: skyblue"></i>Bookmark</button>
+       </div>
+     </div>
+      
+
+  </div>  
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+              pagination: {
+          el: '.swiper-pagination',
+        },
+          scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
+    </script>
+</body>
+</html>
