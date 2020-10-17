@@ -13,11 +13,11 @@ ___
 A HTTP JSON API of a basic version of a news app like inshorts.
 
 ## Requirements
-- [x] 'GET /articles' returns list of coasters as JSON
-- [x] 'GET /articles/{id}' returns details of specific article as JSON
-- [x] 'POST /articles' accepts a new article to be added
-- [x] 'POST /articles' returns status 415 if content is not application/json
-- [x] 'GET /articles/search?q=<search term here>' lists all the articles with the search keyword in it
+* [x] 'GET /articles' returns list of coasters as JSON
+* [x] 'GET /articles/{id}' returns details of specific article as JSON
+* [x] 'POST /articles' accepts a new article to be added
+* [x] 'POST /articles' returns status 415 if content is not application/json
+* [x] 'GET /articles/search?q=<search term here>' lists all the articles with the search keyword in it
  
  Data stored in memory. No database is used.
  ---
