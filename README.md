@@ -13,7 +13,7 @@ ___
 A HTTP JSON API of a basic version of a news app like inshorts.
 
 ## Requirements
-* [x] `GET /articles` returns list of coasters as JSON
+* [x] `GET /articles` returns list of articles as JSON
 * [x] `GET /articles/{id}` returns details of specific article as JSON
 * [x] `POST /articles` accepts a new article to be added
 * [x] `POST /articles` returns status 415 if content is not application/json
